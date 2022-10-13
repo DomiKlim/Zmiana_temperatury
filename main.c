@@ -36,3 +36,53 @@ int main(){
     return 0;
 
 }
+/*
+#include <stdio.h>
+/*
+I = 1.
+V = 5.
+X = 10.
+L = 50.
+C = 100.
+D = 500.
+M = 1 000.
+ */
+int main() {
+    char rzym;
+    printf("Podaj liczbe rzymska:");
+    if( 1!= scanf("%[I,V,X,L,C,D,M]c",&rzym)){
+        printf("Zle dane wejsciowe");
+        return 1;
+    }
+    switch (rzym) {
+        case 'I':
+            printf("%c to 1",rzym);
+            break;
+        case 'V':
+            printf("%c to 5",rzym);
+            break;
+        case 'X':
+            printf("%c to 10",rzym);
+            break;
+        case 'L':
+            printf("%c to 50",rzym);
+            break;
+        case 'C':
+            printf("%c to 100",rzym);
+            break;
+        case 'D':
+            printf("%c to 500",rzym);
+            break;
+        case 'M':
+            printf("%c to 1000",rzym);
+            break;
+        default:
+            printf('Twoja liczba rzymska nie jest poprawna');
+
+    }
+        
+
+    return 0;
+}
+
+*/
